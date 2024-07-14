@@ -1,0 +1,100 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.listWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+
+.listSearch {
+  flex: 1;
+  background-color: #171717;
+  outline: 1px solid white;
+  padding: 10px;
+  position: sticky;
+  top: 10px;
+  height: max-content;
+}
+
+.lsTitle {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.lsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+  position: relative; /* Added to ensure date picker positions correctly */
+}
+
+.lsItem > label {
+  font-size: 12px;
+  color: white;
+}
+
+.lsItem > input {
+  height: 30px;
+  border: none;
+  padding: 5px;
+}
+
+.lsItem > span {
+  height: 30px;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lsOptions {
+  padding: 10px;
+}
+
+.lsOptionItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #f0e8e8;
+  font-size: 12px;
+}
+
+.lsOptionInput {
+  width: 50px;
+  background-color: transparent;
+  color: #f0e8e8;
+}
+
+.listSearch > button {
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.listResult {
+  flex: 3;
+}
+
+.dateText{
+  color: rgb(118, 107, 107);
+  font-size: 14px;
+}
+
+.date {
+  position: absolute;
+  top: 40px; 
+  z-index: 1000; 
+  background-color: white; 
+  color: black; 
+}
